@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="IREngine">
 <meta property="og:description" content="ES6风格指南块级作用域 let 取代 var，var全局，let块内且无副作用 全局常量和线程安全，const声明常量故优先使用  字符串 静态字符串使用单引号或反引号 动态字符串使用反引号  解构赋值 使用数组成员对变量赋值时，优先使用解构赋值 函数的参数如果是对象的成员，优先使用解构赋值 如果函数返回多个值，优先使用对象的解构赋值，而不是数组的解构赋值，便于返回值的变化  12345678c">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:updated_time" content="2018-09-06T13:46:24.101Z">
+<meta property="og:updated_time" content="2018-09-07T06:17:25.244Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue风格指南">
 <meta name="twitter:description" content="ES6风格指南块级作用域 let 取代 var，var全局，let块内且无副作用 全局常量和线程安全，const声明常量故优先使用  字符串 静态字符串使用单引号或反引号 动态字符串使用反引号  解构赋值 使用数组成员对变量赋值时，优先使用解构赋值 函数的参数如果是对象的成员，优先使用解构赋值 如果函数返回多个值，优先使用对象的解构赋值，而不是数组的解构赋值，便于返回值的变化  12345678c">
@@ -316,7 +316,38 @@
 <li>单文件组件 (<code>.vue</code>)</li>
 <li><code>&lt;script type=&quot;text/x-template&quot;&gt;</code></li>
 </ul>
-<h2 id="iView风格指南"><a href="#iView风格指南" class="headerlink" title="iView风格指南"></a>iView风格指南</h2><hr>
+<h3 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h3><ul>
+<li>组件名为多个单词</li>
+<li>data 定义为函数</li>
+<li>prop 定义尽量详细，至少需要指定其类型</li>
+<li>组件样式设置作用域 scoped</li>
+<li>各个组件单独一个文件</li>
+<li>单文件组件的文件名应该要么始终是单词大写开头 (PascalCase)，要么始终是横线连接 (kebab-case)</li>
+<li>基础组件及文件名 (也就是展示类的、无逻辑的或无状态的组件) 应该全部以一个特定的前缀开头，比如 Base、App 或 V</li>
+<li>单例组件及文件名应该以 The 前缀命名，以示其唯一性</li>
+<li>和父组件紧密耦合的子组件应该以父组件名作为前缀命名</li>
+<li>组件名应该以高级别的 (通常是一般化描述的) 单词开头，以描述性的修饰词结尾</li>
+<li>在单文件组件、字符串模板和 JSX 中没有内容的组件应该是自闭合的——但在 DOM 模板里永远不要这样做</li>
+<li>在单文件组件和字符串模板中组件名应该总是 PascalCase 的，但是在 DOM 模板中总是 kebab-case 的</li>
+<li>JS/JSX 中的组件名应该始终是 PascalCase 的</li>
+<li>组件名应该倾向于完整单词而不是缩写</li>
+<li>在声明 prop 的时候，其命名应该始终使用 camelCase，而在模板和 JSX 中应该始终使用 kebab-case</li>
+<li>组件模板应该只包含简单的表达式，复杂的表达式则应该重构为计算属性或方法</li>
+<li>把复杂计算属性分割为尽可能多的更简单的属性</li>
+</ul>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><ul>
+<li>v-for设置键值</li>
+<li>不要同时使用v-if和v-for</li>
+<li>在插件、混入等扩展中始终为自定义的私有属性使用 $_ 前缀</li>
+<li>多个特性的元素应该分多行撰写，每个特性一行</li>
+<li>非空 HTML 特性值应该始终带引号 (单引号或双引号，选你 JS 里不用的那个)</li>
+<li>指令缩写 (用 : 表示 v-bind: 和用 @ 表示 v-on:) </li>
+</ul>
+<h3 id="顺序"><a href="#顺序" class="headerlink" title="顺序"></a>顺序</h3><ul>
+<li><a href="https://cn.vuejs.org/v2/style-guide/#%E7%BB%84%E4%BB%B6-%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%89%E9%A1%B9%E7%9A%84%E9%A1%BA%E5%BA%8F-%E6%8E%A8%E8%8D%90" target="_blank" rel="noopener">组件/实例的选项的顺序</a></li>
+<li><a href="https://cn.vuejs.org/v2/style-guide/#%E5%85%83%E7%B4%A0%E7%89%B9%E6%80%A7%E7%9A%84%E9%A1%BA%E5%BA%8F-%E6%8E%A8%E8%8D%90" target="_blank" rel="noopener">元素特性的顺序</a></li>
+</ul>
+<hr>
 <p>Reference(s):</p>
 <ul>
 <li><a href="http://es6.ruanyifeng.com/#docs/style" target="_blank" rel="noopener">http://es6.ruanyifeng.com/#docs/style</a></li>
@@ -332,7 +363,7 @@
 
 </div>
 
-    <a data-url="http://aka.github.io/2018/09/05/vue-style-guide/" data-id="cjlrbvoqd0005qbx4aamp0r68" class="article-share-link"><i class="fas fa-share"></i>Share</a>
+    <a data-url="http://aka.github.io/2018/09/05/vue-style-guide/" data-id="cjlss76x80005qcx4zltld3m3" class="article-share-link"><i class="fas fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
