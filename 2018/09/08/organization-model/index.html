@@ -3,20 +3,20 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Semantic Commit Messages | IREngine</title>
+    <title>组织模型 | IREngine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="See how a minor change to your commit message style can make you a better programmer. Format: &amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;subject&amp;gt; &amp;lt;scope&amp;gt; is optional Example123456feat: add hat wobble^-">
-<meta name="keywords" content="git">
+    <meta name="description" content="简单来说，供应链从功能上可描述为 供应商 ==&amp;gt; 生产商 ==&amp;gt; 分销商 ==&amp;gt; 零售商 ==&amp;gt; 消费者 同时，从供应链的节点上又可描述为 制造中心(MFG) –&amp;gt; 中央物流中心(CDC) –&amp;gt; 区域物流中心(RDC) –&amp;gt; 最终用户(EC) 重要的是，对于系统的视角，我们是从生产商的视角，还是服务商的视角进行设计？ 组织模型当某人或组织对别的人或组织承担">
+<meta name="keywords" content="design">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Semantic Commit Messages">
-<meta property="og:url" content="http://aka.github.io/2018/09/05/git-semantic-commit-messages/index.html">
+<meta property="og:title" content="组织模型">
+<meta property="og:url" content="http://aka.github.io/2018/09/08/organization-model/index.html">
 <meta property="og:site_name" content="IREngine">
-<meta property="og:description" content="See how a minor change to your commit message style can make you a better programmer. Format: &amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;subject&amp;gt; &amp;lt;scope&amp;gt; is optional Example123456feat: add hat wobble^-">
+<meta property="og:description" content="简单来说，供应链从功能上可描述为 供应商 ==&amp;gt; 生产商 ==&amp;gt; 分销商 ==&amp;gt; 零售商 ==&amp;gt; 消费者 同时，从供应链的节点上又可描述为 制造中心(MFG) –&amp;gt; 中央物流中心(CDC) –&amp;gt; 区域物流中心(RDC) –&amp;gt; 最终用户(EC) 重要的是，对于系统的视角，我们是从生产商的视角，还是服务商的视角进行设计？ 组织模型当某人或组织对别的人或组织承担">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:updated_time" content="2018-09-04T17:30:58.731Z">
+<meta property="og:updated_time" content="2018-09-14T06:34:08.006Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Semantic Commit Messages">
-<meta name="twitter:description" content="See how a minor change to your commit message style can make you a better programmer. Format: &amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;subject&amp;gt; &amp;lt;scope&amp;gt; is optional Example123456feat: add hat wobble^-">
+<meta name="twitter:title" content="组织模型">
+<meta name="twitter:description" content="简单来说，供应链从功能上可描述为 供应商 ==&amp;gt; 生产商 ==&amp;gt; 分销商 ==&amp;gt; 零售商 ==&amp;gt; 消费者 同时，从供应链的节点上又可描述为 制造中心(MFG) –&amp;gt; 中央物流中心(CDC) –&amp;gt; 区域物流中心(RDC) –&amp;gt; 最终用户(EC) 重要的是，对于系统的视角，我们是从生产商的视角，还是服务商的视角进行设计？ 组织模型当某人或组织对别的人或组织承担">
     
 
     
@@ -213,7 +213,7 @@
 </aside>
 
             
-            <section id="main"><article id="post-git-semantic-commit-messages" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-organization-model" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -221,7 +221,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            Semantic Commit Messages
+            组织模型
         </h1>
     
 
@@ -230,8 +230,8 @@
                         
     <div class="article-date">
         <i class="fas fa-calendar-alt"></i>
-        <a href="/2018/09/05/git-semantic-commit-messages/">
-            <time datetime="2018-09-04T17:18:49.000Z" itemprop="datePublished">2018-09-05</time>
+        <a href="/2018/09/08/organization-model/">
+            <time datetime="2018-09-08T04:31:41.000Z" itemprop="datePublished">2018-09-08</time>
         </a>
     </div>
 
@@ -239,13 +239,13 @@
                         
     <div class="article-category">
     	<i class="fas fa-folder"></i>
-        <a class="article-category-link" href="/categories/programming/">programming</a>
+        <a class="article-category-link" href="/categories/supply-chain/">supply chain</a>
     </div>
 
                         
     <div class="article-tag">
         <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/git/">git</a>
+        <a class="tag-link" href="/tags/design/">design</a>
     </div>
 
                     </div>
@@ -256,27 +256,30 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>See how a minor change to your commit message style can make you a better programmer.</p>
-<p>Format: <code>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;</code></p>
-<p><code>&lt;scope&gt;</code> is optional</p>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">feat: add hat wobble</span><br><span class="line">^--^  ^------------^</span><br><span class="line">|     |</span><br><span class="line">|     +-&gt; Summary in present tense.</span><br><span class="line">|</span><br><span class="line">+-------&gt; Type: chore, docs, feat, fix, refactor, style, or test.</span><br></pre></td></tr></table></figure>
-<p>More Examples:</p>
+            <p>简单来说，供应链从功能上可描述为</p>
+<p>供应商 ==&gt; 生产商 ==&gt; 分销商 ==&gt; 零售商 ==&gt; 消费者</p>
+<p>同时，从供应链的节点上又可描述为</p>
+<p>制造中心(MFG) –&gt; 中央物流中心(CDC) –&gt; 区域物流中心(RDC) –&gt; 最终用户(EC)</p>
+<p><em>重要的是，对于系统的视角，我们是从生产商的视角，还是服务商的视角进行设计？</em></p>
+<h1 id="组织模型"><a href="#组织模型" class="headerlink" title="组织模型"></a>组织模型</h1><p>当某人或组织对别的人或组织承担某种责任时就运用到<strong>责任</strong>这个概念，这是一个抽象的概念，可以用来描述很多特殊的问题，包括组织结构、合同协议或者雇佣关系等</p>
+<p>我们采用责任模型来解决组织结构问题，涉及到以下</p>
 <ul>
-<li><code>feat</code>: (new feature for the user, not a new feature for build script)</li>
-<li><code>fix</code>: (bug fix for the user, not a fix to a build script)</li>
-<li><code>docs</code>: (changes to the documentation)</li>
-<li><code>style</code>: (formatting, missing semi colons, etc; no production code change)</li>
-<li><code>refactor</code>: (refactoring production code, eg. renaming a variable)</li>
-<li><code>test</code>: (adding missing tests, refactoring tests; no production code change)</li>
-<li><code>chore</code>: (updating grunt tasks etc; no production code change)</li>
+<li>团体模式: 人和组织的超类型</li>
+<li>组织层次模式: 适用于简单的组织结构</li>
+<li>组织结构模式: 适用于当层次结构过多时，模型变得复杂的情况</li>
+<li>责任模式: 用团体模式和组织层次模式组合在一起，用来处理团体之间的很多关系，包括组织机构、服务协议</li>
 </ul>
-<hr>
-<p>Reference(s):</p>
-<ul>
-<li><a href="https://seesparkbox.com/foundry/semantic_commit_messages" target="_blank" rel="noopener">https://seesparkbox.com/foundry/semantic_commit_messages</a></li>
-<li><a href="http://karma-runner.github.io/1.0/dev/git-commit-msg.html" target="_blank" rel="noopener">http://karma-runner.github.io/1.0/dev/git-commit-msg.html</a></li>
-<li><a href="http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html" target="_blank" rel="noopener">Commit message 和 Change log 编写指南</a></li>
-</ul>
+<p>如果采用责任模式，必须描述责任模式的类型，以及相应的约束规则，这些规则可以用责任知识级的类型实例来描述；责任模式定义了团体的职责，这些职责可通过操作范围模式来定义</p>
+<h2 id="仓库的划分"><a href="#仓库的划分" class="headerlink" title="仓库的划分"></a>仓库的划分</h2><h3 id="作业区域（Area）"><a href="#作业区域（Area）" class="headerlink" title="作业区域（Area）"></a>作业区域（Area）</h3><p>对应现有库房的实体,是作业任务分配的单位，与拣配组的工作范围对应，一个 作业区域(Area)可以包含多个上架区，一个上架区只能属于一个作业区域。</p>
+<h3 id="区（Zone）"><a href="#区（Zone）" class="headerlink" title="区（Zone）"></a>区（Zone）</h3><p>• 区定义：一个区对应一组货位的集合，用于存放多种体积、重量属性类似的 商品，区主要用于上架策略计算。一个上架区只能属于一个作业区域。</p>
+<p>• 可以为一个仓库调度不同的区。这样，当创建一个“储存区”时，可以为它 赋予不同的区。例如保税，非保税，或者按照不同客户，不同商品类型区分。</p>
+<h3 id="货位（Location）"><a href="#货位（Location）" class="headerlink" title="货位（Location）"></a>货位（Location）</h3><p>• 每个仓库库位上的一个唯一标识符。仓库管理系统中可管理的最小固定存储 单元。</p>
+<p>货位</p>
+<p>货品存入的位置 ，存储的最小管理单元</p>
+<p>• 货位类型</p>
+<p>−按箱拣货<br>−FLOWTHRU通道<br>−中间落放<br>−其它<br>−按件拣货<br>−拣货和落放<br>−快速行<br>−待运<br>−通道<br>−拣货道</p>
+<p>• 库存关联属性</p>
+<p>−库位长、宽、高、容积<br>−是否混放商品<br>−是否混放批次<br>−路线顺序<br>−堆栈限制</p>
 
         
         </div>
@@ -287,7 +290,7 @@
 
 </div>
 
-    <a data-url="http://aka.github.io/2018/09/05/git-semantic-commit-messages/" data-id="cjm742vgi0002xox40dgww1la" class="article-share-link"><i class="fas fa-share"></i>Compartir</a>
+    <a data-url="http://aka.github.io/2018/09/08/organization-model/" data-id="cjm742vgg0001xox4dubcb90q" class="article-share-link"><i class="fas fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -362,19 +365,19 @@
         
 <nav id="article-nav">
     
-        <a href="/2018/09/05/vue-style-guide/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2018/09/12/product-model/" id="article-nav-newer" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Más nuevo</strong>
             <div class="article-nav-title">
                 
-                    Vue风格指南
+                    商品模型
                 
             </div>
         </a>
     
     
-        <a href="/2018/09/04/javascript-stack-from-scratch/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/09/08/security-model/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Más viejo</strong>
-            <div class="article-nav-title">JavaScript Stack from Scratch</div>
+            <div class="article-nav-title">security model</div>
         </a>
     
 </nav>
